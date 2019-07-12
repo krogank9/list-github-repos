@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>GitHub repo finder</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<main>
+		<h1>GitHub Repo Finder</h1>
+
+		<form>
+				<label>
+			GitHub Handle
+			<input type="text" id="user-handle" placeholder="User Handle" required>
+				</label>
+
+				<input type="submit" value="List Repos">
+		 </form>
+		 
+		 <section id="repos-container" class="hidden">
+			 <h2 id="repos-header">Repo List</h2>
+			 <ul id="repos-list">
+			 </ul>
+		 </section>
+	</main>
+	<script src="index.js"></script>
+</body>
+</html>
